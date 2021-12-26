@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(45deg,green,aqua,black);
+}
+@font-face{
+    font-family: 'FASTRACE';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../fonts/Fastrace-YzXKj.ttf");
+}
+@font-face{
+    font-family: 'vtks';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../fonts/VtksDura3D-P12r.ttf");
+}
+@font-face{
+    font-family: 'superfast';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../fonts/QuicksilverFastRegular-DO3oE.ttf");
+}
+.nav{
+    padding: 20px 30px;
+    color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid greenyellow;
+    margin: 20px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background: linear-gradient(45deg,black,aqua,black,yellow,aqua,greenyellow,yellow,greenyellow);
+}
+.logo_text{
+    font-family: 'FASTRACE';
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    color: white;
+    
+}
+
+
+.nav_list{
+    display: flex;
+}
+.nav_link{
+    list-style: none;
+    display: flex;
+}
+.link_txt{
+    margin-left:50px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 27px;
+    font-family: 'FASTRACE';
+    text-shadow: 0 2px 2px #dfdfdf, 
+    -2px 3px 1px #b8b8b8,
+    -6px 4px 0px #747474,
+    -10px 5px 0px #343434;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+/* nav end */
+
+.header{
+    margin: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 30px 40px;
+    background: rgb(102, 255, 0);
+
+}
+.header_blogs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head_left-blog{
+    border-right: 5px double rgb(255, 4, 4);
+    padding-right: 100px;
+}
+.header_title{
+    font-size: 40px;
+    font-family: 'superfast';
+    color: rgb(3, 116, 116);
+}
+.header_img{
+    width: 500px;
+    height: 400px;
+    border-radius: 30px;
+    border: 1px solid green;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.header_text{
+    font-size: 18px;
+    width: 500px;
+    text-align: justify;
+    font-family: fantasy;
+    font-weight: 50px;
+    margin-top: 25px;
+    line-height: 35px;
+}
+/* slider begin */
+
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+
+.slider_main {
+    
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  margin: 0;
+
+  background: hsla(9, 58%, 47%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(9, 58%, 47%, 1) 0%,
+    hsla(215, 76%, 41%, 1) 100%
+  );
+
+  font-family: "Muli", sans-serif;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.slider__slide {
+  position: relative;
+
+  flex: 1;
+
+  height: 80vh;
+  margin: 10px;
+}
+
+.slide {
+  overflow: hidden;
+
+  cursor: pointer;
+  transition: all 1s ease-out;
+
+  opacity: 0.5;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 25px #111;
+}
+
+.slide__image {
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.5s ease-out;
+
+  object-fit: cover;
+}
+
+.slide__caption {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+
+  margin: 0;
+  padding: 5px 10px;
+
+  opacity: 0;
+  border-radius: 5px;
+  background: hsla(9, 58%, 47%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(9, 58%, 47%, 1) 0%,
+    hsla(215, 76%, 41%, 1) 100%
+  );
+  box-shadow: 5px 5px 10px #111;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.slide__caption_visuall-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
+.slide__link {
+  color: #0fc315;
+}
+
+.slide_active {
+  flex: 10;
+
+  opacity: 1;
+}
+
+.slide_active .slide__caption {
+  transition: opacity 0.3s ease-in 0.4s;
+
+  opacity: 0.7;
+}
+
+.slide_active .slide__caption:hover {
+  opacity: 1;
+}
+
+
+/* slider end */
